@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>SPA_Logo.ico</ApplicationIcon>
+    <AssemblyName>SignallingPowerApp</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="SPA_Logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="EquipmentLibrary.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SignallingPowerApp.Core\SignallingPowerApp.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="QuestPDF" Version="2025.7.3" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,91 @@
+<Window x:Class="SignallingPowerApp.Views.EditEquipmentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Edit Equipment" 
+        Height="500" 
+        Width="450"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="5,5,5,0"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="5,0,5,5"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Height" Value="30"/>
+        </Style>
+    </Window.Resources>
+    
+    <DockPanel>
+        <!-- Title Bar -->
+        <Border DockPanel.Dock="Top" 
+                Background="#FFE0E0E0" 
+                BorderBrush="Gray" 
+                BorderThickness="0,0,0,1"
+                Padding="10">
+            <TextBlock x:Name="TitleTextBlock" 
+                       Text="Edit Equipment" 
+                       FontWeight="Bold" 
+                       FontSize="16"/>
+        </Border>
+        
+        <!-- Button Bar -->
+        <Border DockPanel.Dock="Bottom" 
+                Background="#FFF5F5F5" 
+                BorderBrush="Gray" 
+                BorderThickness="0,1,0,0"
+                Padding="10">
+            <Grid>
+                <!-- Remove button on the left (only visible when editing) -->
+                <Button x:Name="RemoveButton" 
+                        Content="Remove" 
+                        Width="80" 
+                        Height="30" 
+                        Margin="5,0"
+                        HorizontalAlignment="Left"
+                        Click="RemoveButton_Click"
+                        Visibility="Collapsed"
+                        Background="#FFFFE0E0"
+                        BorderBrush="#FFCC0000"/>
+                
+                <!-- Save and Cancel buttons on the right -->
+                <StackPanel Orientation="Horizontal" 
+                            HorizontalAlignment="Right">
+                    <Button x:Name="SaveButton" 
+                            Content="Save" 
+                            Width="80" 
+                            Height="30" 
+                            Margin="5,0"
+                            Click="SaveButton_Click"
+                            IsDefault="True"/>
+                    <Button x:Name="CancelButton" 
+                            Content="Cancel" 
+                            Width="80" 
+                            Height="30" 
+                            Margin="5,0"
+                            Click="CancelButton_Click"
+                            IsCancel="True"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+        
+        <!-- Content Area -->
+        <ScrollViewer VerticalScrollBarVisibility="Auto" 
+                      Padding="10">
+            <StackPanel x:Name="FormContent">
+                <!-- Dynamic content will be added based on equipment type -->
+                <TextBlock Text="Select an equipment item to edit" 
+                           FontStyle="Italic" 
+                           Foreground="Gray"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Margin="20"/>
+            </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
+</Window>

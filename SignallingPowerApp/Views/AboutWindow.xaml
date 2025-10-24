@@ -1,0 +1,192 @@
+<Window x:Class="SignallingPowerApp.Views.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="About Signalling Power App" 
+        Height="500" 
+        Width="700"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="CanResize">
+    <Window.Resources>
+        <!-- Style for headers -->
+        <Style x:Key="HeaderTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+        </Style>
+        
+        <!-- Style for data grid -->
+        <Style TargetType="DataGrid">
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="CanUserDeleteRows" Value="False"/>
+            <Setter Property="CanUserResizeRows" Value="False"/>
+            <Setter Property="SelectionMode" Value="Single"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="GridLinesVisibility" Value="All"/>
+            <Setter Property="RowHeight" Value="25"/>
+        </Style>
+    </Window.Resources>
+    
+    <DockPanel>
+        <!-- Title Bar -->
+        <Border DockPanel.Dock="Top" 
+                Background="#FF2C5F8D" 
+                BorderBrush="Gray" 
+                BorderThickness="0,0,0,1"
+                Padding="15">
+            <TextBlock Text="About Signalling Power App" 
+                       FontWeight="Bold" 
+                       FontSize="20"
+                       Foreground="White"/>
+        </Border>
+        
+        <!-- Button Bar -->
+        <Border DockPanel.Dock="Bottom" 
+                Background="#FFF5F5F5" 
+                BorderBrush="Gray" 
+                BorderThickness="0,1,0,0"
+                Padding="10">
+            <Button x:Name="CloseButton" 
+                    Content="Close" 
+                    Width="80" 
+                    Height="30" 
+                    HorizontalAlignment="Right"
+                    Click="CloseButton_Click"
+                    IsDefault="True"
+                    IsCancel="True"/>
+        </Border>
+        
+        <!-- Content Area -->
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="20">
+                <!-- Application Info Section -->
+                <TextBlock Style="{StaticResource HeaderTextStyle}">
+                    Application Information
+                </TextBlock>
+                
+                <Grid Margin="0,0,0,20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    
+                    <TextBlock Grid.Row="0" Grid.Column="0" 
+                               Text="Application:" 
+                               FontWeight="SemiBold" 
+                               Margin="0,0,10,5"/>
+                    <TextBlock Grid.Row="0" Grid.Column="1" 
+                               Text="Queensland Rail Signalling Power App" 
+                               Margin="0,0,0,5"/>
+                    
+                    <TextBlock Grid.Row="1" Grid.Column="0" 
+                               Text="Description:" 
+                               FontWeight="SemiBold" 
+                               Margin="0,0,10,5"/>
+                    <TextBlock Grid.Row="1" Grid.Column="1" 
+                               Text="A specialised application for assisting the design and analysis of railway signalling power distribution systems."
+                               TextWrapping="Wrap"
+                               Margin="0,0,0,5"/>
+                    
+                    <TextBlock Grid.Row="2" Grid.Column="0" 
+                               Text="Property of:" 
+                               FontWeight="SemiBold" 
+                               Margin="0,0,10,5"/>
+                    <TextBlock Grid.Row="2" Grid.Column="1" 
+                               Text="Queensland Rail" 
+                               Margin="0,0,0,5"/>
+                </Grid>
+                
+                <!-- Current Version Section -->
+                <TextBlock Style="{StaticResource HeaderTextStyle}">
+                    Current Version
+                </TextBlock>
+                
+                <Border BorderBrush="#FFD0D0D0" 
+                        BorderThickness="1" 
+                        Padding="10" 
+                        Margin="0,0,0,20"
+                        Background="#FFF9F9F9">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        
+                        <TextBlock Grid.Row="0" Grid.Column="0" 
+                                   Text="Version:" 
+                                   FontWeight="SemiBold" 
+                                   Margin="0,0,10,5"/>
+                        <TextBlock x:Name="CurrentVersionText" 
+                                   Grid.Row="0" Grid.Column="1" 
+                                   Margin="0,0,0,5"/>
+                        
+                        <TextBlock Grid.Row="1" Grid.Column="0" 
+                                   Text="Author:" 
+                                   FontWeight="SemiBold" 
+                                   Margin="0,0,10,5"/>
+                        <TextBlock x:Name="CurrentAuthorText" 
+                                   Grid.Row="1" Grid.Column="1" 
+                                   Margin="0,0,0,5"/>
+                        
+                        <TextBlock Grid.Row="2" Grid.Column="0" 
+                                   Text="Build Date:" 
+                                   FontWeight="SemiBold" 
+                                   Margin="0,0,10,5"/>
+                        <TextBlock x:Name="CurrentBuildDateText" 
+                                   Grid.Row="2" Grid.Column="1" 
+                                   Margin="0,0,0,5"/>
+                        
+                        <TextBlock Grid.Row="3" Grid.Column="0" 
+                                   Text="Description:" 
+                                   FontWeight="SemiBold" 
+                                   Margin="0,0,10,5"
+                                   VerticalAlignment="Top"/>
+                        <TextBlock x:Name="CurrentDescriptionText" 
+                                   Grid.Row="3" Grid.Column="1" 
+                                   TextWrapping="Wrap"
+                                   Margin="0,0,0,5"/>
+                    </Grid>
+                </Border>
+                
+                <!-- Version History Section -->
+                <TextBlock Style="{StaticResource HeaderTextStyle}">
+                    Version History
+                </TextBlock>
+                
+                <DataGrid x:Name="VersionHistoryGrid" 
+                          Margin="0,0,0,20"
+                          MaxHeight="200">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Version" 
+                                            Binding="{Binding VersionNumber}" 
+                                            Width="80"/>
+                        <DataGridTextColumn Header="Build Date" 
+                                            Binding="{Binding BuildDate}" 
+                                            Width="100"/>
+                        <DataGridTextColumn Header="Author" 
+                                            Binding="{Binding Author}" 
+                                            Width="150"/>
+                        <DataGridTextColumn Header="Description" 
+                                            Binding="{Binding Description}" 
+                                            Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
+</Window>

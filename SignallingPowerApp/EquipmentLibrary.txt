@@ -1,0 +1,454 @@
+;===== ITEM DATA =====
+
+;----- CONDUCTORS -----
+
+Begin Conductor
+    Cores 1
+    StrandCount 19
+    StrandDiameter 2.14
+    CrossSectionalArea 70.0
+    Description "Power 1C 70mm^2 19/2.14"
+    VoltageDrop60 0.569
+    VoltageDrop90 0.622
+    Reactance 0.0827
+    Resistance60 0.311
+    Resistance90 0.342
+End Conductor
+
+Begin Conductor
+    Cores 1
+    StrandCount 19
+    StrandDiameter 2.45
+    CrossSectionalArea 95.0
+    Description "Power 1C 95mm^2 19/2.45"
+    VoltageDrop60 0.443
+    VoltageDrop90 0.483
+    Reactance 0.0804
+    Resistance60 0.224
+    Resistance90 0.247
+End Conductor
+
+Begin Conductor
+    Cores 1
+    StrandCount 37
+    StrandDiameter 2.25
+    CrossSectionalArea 150.0
+    Description "Power 1C 150mm^2 37/2.25"
+    VoltageDrop60 0.302
+    VoltageDrop90 0.325
+    Reactance 0.0772
+    Resistance60 0.145
+    Resistance90 0.160
+End Conductor
+
+Begin Conductor
+    Cores 2
+    StrandCount 7
+    StrandDiameter 0.85
+    CrossSectionalArea 4.0
+    Description "Power 2C 4mm^2 7/0.85"
+    VoltageDrop60 6.62
+    VoltageDrop90 7.29
+    Reactance 0.120
+    Resistance60 4.48
+    Resistance90 4.94
+End Conductor
+
+Begin Conductor
+    Cores 2
+    StrandCount 7
+    StrandDiameter 1.04
+    CrossSectionalArea 6.0
+    Description "Power 2C 6mm^2 7/1.04"
+    VoltageDrop60 6.62
+    VoltageDrop90 7.29
+    Reactance 0.112
+    Resistance60 3.30
+    Resistance90 3.61
+End Conductor
+
+Begin Conductor
+    Cores 2
+    StrandCount 7
+    StrandDiameter 1.35
+    CrossSectionalArea 10.0
+    Description "Power 2C 10mm^2 7/1.35"
+    VoltageDrop60 3.83
+    VoltageDrop90 4.22
+    Reactance 0.104
+    Resistance60 1.95
+    Resistance90 2.14
+End Conductor
+
+Begin Conductor
+    Cores 2
+    StrandCount 7
+    StrandDiameter 1.70
+    CrossSectionalArea 16.0
+    Description "Power 2C 16mm^2 7/1.70"
+    VoltageDrop60 2.43
+    VoltageDrop90 2.68
+    Reactance 0.0976
+    Resistance60 1.33
+    Resistance90 1.47
+End Conductor
+
+Begin Conductor
+    Cores 2
+    StrandCount 19
+    StrandDiameter 1.53
+    CrossSectionalArea 35.0
+    Description "Power 2C 35mm^2 19/1.53"
+    VoltageDrop60 1.12
+    VoltageDrop90 1.24
+    Reactance 0.0889
+    Resistance60 0.607
+    Resistance90 0.669
+End Conductor
+
+Begin Conductor
+    Cores 2
+    StrandCount 19
+    StrandDiameter 1.78
+    CrossSectionalArea 50.0
+    Description "Power 2C 50mm^2 19/1.78"
+    VoltageDrop60 0.792
+    VoltageDrop90 0.869
+    Reactance 0.0854
+    Resistance60 0.448
+    Resistance90 0.494
+End Conductor
+
+Begin Conductor
+    Cores 2
+    StrandCount 19
+    StrandDiameter 2.14
+    CrossSectionalArea 70.0
+    Description "Power 2C 70mm^2 19/2.14"
+    VoltageDrop60 0.569
+    VoltageDrop90 0.622
+    Reactance 0.0827
+    Resistance60 0.311
+    Resistance90 0.342
+End Conductor
+
+Begin Conductor
+    Cores 3
+    StrandCount 7
+    StrandDiameter 0.85
+    CrossSectionalArea 4.0
+    Description "Power 3C 4mm^2 7/0.85"
+    VoltageDrop60 6.62
+    VoltageDrop90 7.29
+    Reactance 0.120
+    Resistance60 4.48
+    Resistance90 4.94
+End Conductor
+
+Begin Conductor
+    Cores 3
+    StrandCount 7
+    StrandDiameter 1.04
+    CrossSectionalArea 6.0
+    Description "Power 3C 6mm^2 7/1.04"
+    VoltageDrop60 6.62
+    VoltageDrop90 7.29
+    Reactance 0.112
+    Resistance60 3.30
+    Resistance90 3.61
+End Conductor
+
+Begin Conductor
+    Cores 4
+    StrandCount 19
+    StrandDiameter 1.53
+    CrossSectionalArea 35.0
+    Description "Power 4C 35mm^2 19/1.53"
+    VoltageDrop60 1.12
+    VoltageDrop90 1.24
+    Reactance 0.0889
+    Resistance60 0.607
+    Resistance90 0.669
+End Conductor
+
+;----- TRANSFORMERUPS -----
+
+Begin TransformerUPS
+    Rating 20000
+    PercentageZ 3.07
+    PrimaryVoltage 415
+    SecondaryVoltage 415
+    Description "20kVA UPS"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 30000
+    PercentageZ 3.13
+    PrimaryVoltage 415
+    SecondaryVoltage 415
+    Description "30kVA UPS"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 40000
+    PercentageZ 3.13
+    PrimaryVoltage 415
+    SecondaryVoltage 415
+    Description "40kVA UPS"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 250
+    PercentageZ 3.9
+    PrimaryVoltage 415
+    SecondaryVoltage 415
+    Description "250VA PC/S Transformer"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 500
+    PercentageZ 2.5
+    PrimaryVoltage 415
+    SecondaryVoltage 415
+    Description "500VA PC/S Transformer"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 1000
+    PercentageZ 2.7
+    PrimaryVoltage 415
+    SecondaryVoltage 415
+    Description "1kVA PC/S Transformer"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 1500
+    PercentageZ 2.7
+    PrimaryVoltage 415
+    SecondaryVoltage 415
+    Description "1.5kVA PC/S Transformer"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 2000
+    PercentageZ 3.4
+    PrimaryVoltage 415
+    SecondaryVoltage 415
+    Description "2kVA PC/S Transformer"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 2500
+    PercentageZ 2.4
+    PrimaryVoltage 415
+    SecondaryVoltage 415
+    Description "2.5kVA PC/S Transformer"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 3000
+    PercentageZ 2.4
+    PrimaryVoltage 415
+    SecondaryVoltage 415
+    Description "3kVA PC/S Transformer"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 1000
+    PercentageZ 3.2
+    PrimaryVoltage 415
+    SecondaryVoltage 230
+    Description "1kVA Xfmr 415/230V"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 2000
+    PercentageZ 3.5
+    PrimaryVoltage 415
+    SecondaryVoltage 230
+    Description "2kVA Xfmr 415/230V"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 3000
+    PercentageZ 3.3
+    PrimaryVoltage 415
+    SecondaryVoltage 230
+    Description "3kVA Xfmr 415/230V"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 5000
+    PercentageZ 3.8
+    PrimaryVoltage 415
+    SecondaryVoltage 230
+    Description "5kVA Xfmr 415/230V"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 10000
+    PercentageZ 4.2
+    PrimaryVoltage 415
+    SecondaryVoltage 230
+    Description "10kVA Xfmr 415/230V"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 1000
+    PercentageZ 3.5
+    PrimaryVoltage 230
+    SecondaryVoltage 110
+    Description "1kVA Isolation Xfmr"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 5000
+    PercentageZ 4.5
+    PrimaryVoltage 230
+    SecondaryVoltage 110
+    Description "5kVA UPS Single Phase"
+End TransformerUPS
+
+Begin TransformerUPS
+    Rating 10000
+    PercentageZ 5.0
+    PrimaryVoltage 230
+    SecondaryVoltage 110
+    Description "10kVA UPS Single Phase"
+End TransformerUPS
+
+;----- ALTERNATORS -----
+
+Begin Alternator
+    RatingVA 33000
+    RatingW 24000
+    Description "33kVA Generator Set"
+End Alternator
+
+Begin Alternator
+    RatingVA 26500
+    RatingW 16500
+    Description "26.5kVA Generator Set"
+End Alternator
+
+Begin Alternator
+    RatingVA 16500
+    RatingW 11800
+    Description "16.5kVA Generator Set"
+End Alternator
+
+;----- CONSUMERS -----
+
+Begin Consumer
+    Name "GEC Hw2000 RUN"
+    Description "GEC Hw2000 RUNNING"
+    Load 440
+End Consumer
+
+Begin Consumer
+    Name "GEC Hw2000 SLIP"
+    Description "GEC Hw2000 SLIPPING"
+    Load 880
+End Consumer
+
+Begin Consumer
+    Name "W/H TD84M RUN"
+    Description "WESTINGHOUSE TD84M RUNNING"
+    Load 330
+End Consumer
+
+Begin Consumer
+    Name "W/H TD84M SLIP"
+    Description "WESTINGHOUSE TD84M SLIPPING"
+    Load 550
+End Consumer
+
+Begin Consumer
+    Name "W/H M23A MK2 RUN"
+    Description "W/H M23A MK2 RUNNING"
+    Load 550
+End Consumer
+
+Begin Consumer
+    Name "W/H M23A MK2 SLIP"
+    Description "W/H M23A MK2 SLIPPING"
+    Load 1000
+End Consumer
+
+Begin Consumer
+    Name "W/H SPLIT MK2 RUN"
+    Description "W/H SPLIT FIELD MK2 RUNNING"
+    Load 336
+End Consumer
+
+Begin Consumer
+    Name "J.R.I (5 LAMP)"
+    Description "J.R.I (5 LAMP)"
+    Load 130
+End Consumer
+
+Begin Consumer
+    Name "J.R.I (5L) LED W/H"
+    Description "J.R.I (5 LAMP) LED W/H"
+    Load 40
+End Consumer
+
+Begin Consumer
+    Name "J.R.I (5L) 110V"
+    Description "J.R.I (5 LAMP) 110V ac LED"
+    Load 88
+End Consumer
+
+Begin Consumer
+    Name "J.R.I (3 LAMP)"
+    Description "J.R.I (3 LAMP)"
+    Load 78
+End Consumer
+
+Begin Consumer
+    Name "GUARDS PPT (2L)"
+    Description "GUARDS PPT (2 LAMP)"
+    Load 120
+End Consumer
+
+Begin Consumer
+    Name "GUARDS PPT LED"
+    Description "GUARDS PPT LED"
+    Load 7
+End Consumer
+
+Begin Consumer
+    Name "DC TF w150 (W&B8)"
+    Description "NON IMMUNE DC TF w150 (W&B8)"
+    Load 10
+End Consumer
+
+Begin Consumer
+    Name "DC TF BA STACK"
+    Description "AC IMMUNE DC TF BA STACK/S3i"
+    Load 35
+End Consumer
+
+Begin Consumer
+    Name "ML TI21TX"
+    Description "ML TI21TX"
+    Load 35
+End Consumer
+
+Begin Consumer
+    Name "ML TI21RX"
+    Description "ML TI21RX"
+    Load 20
+End Consumer
+
+Begin Consumer
+    Name "DC TF NON IMMUNE"
+    Description "DC TRACK FEED (NON AC IMMUNE)"
+    Load 10
+End Consumer
+
+Begin Consumer
+    Name "BA STACK AC/DC RX"
+    Description "BA STACK AC/DC TRACK RECEIVER"
+    Load 35
+End Consumer
